@@ -1,0 +1,31 @@
+{
+  "name": "homefront",
+  "version": "0.2.0-SNAPSHOT",
+  "description": "Collection of API services for home automation",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jayson J. Phillips",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.2",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.33.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "i": "^0.3.6",
+    "nodemon": "^1.15.1",
+    "npm": "^5.6.0"
+  }
+}
