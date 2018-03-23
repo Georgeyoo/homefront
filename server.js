@@ -9,11 +9,11 @@ const app = express()
 // middleware
 app.use(logger)
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.urlencoded({extended: false}))
 
 // service adapters
-const Hue = require('./lib/HueService')(config.hue)
+const Hue = require('./lib/HueService')(config.data.hue)
 
-require('./routes/lights')(app, Hue);
+require('./routes/lights')(app, Hue)
 
-module.exports = app;
+module.exports = app

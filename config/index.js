@@ -1,3 +1,3 @@
 module.exports = {
-  hue: require('./hue.json')
-};
+  data: require('./setup.json')
+}

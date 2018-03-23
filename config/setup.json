@@ -1,0 +1,7 @@
+{
+  "hue": {
+    "username": "HUE_USER_NAME_GOES_HERE",
+    "ipAddress": "HUE_IP_ADDRESS_HERE",
+    "device": "HUE_DEVICE_NAME_HERE"
+  }
+}

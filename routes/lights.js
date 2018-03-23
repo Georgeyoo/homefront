@@ -6,12 +6,12 @@ module.exports = (app, Hue) => {
    */
   app.get('/api/lights', async (req, res) => {
     try {
-      const result = await Hue.getLights();
-      res.json(result);
+      const result = await Hue.getLights()
+      res.json(result)
     } catch (error) {
-      res.send(error);
+      res.send(error)
     }
-  });
+  })
 
   /**
    * Get Light By Id
@@ -21,11 +21,11 @@ module.exports = (app, Hue) => {
    */
   app.get('/api/lights/:id', async (req, res) => {
     try {
-      const result = await Hue.getLightById(req.params.id);
-      res.json(result);
+      const result = await Hue.getLightById(req.params.id)
+      res.json(result)
     } catch (error) {
-      res.send(error);
+      res.send(error)
     }
-  });
-  return app;
-};
+  })
+  return app
+}
